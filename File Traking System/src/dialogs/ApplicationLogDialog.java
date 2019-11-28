@@ -39,8 +39,9 @@ public class ApplicationLogDialog extends javax.swing.JFrame {
             status.addItem(rs.getString("item_name"));
    
         }
-        }catch(Exception ex){
-            
+        }
+         catch(Exception ex){
+            ;
         }
     }
     private void LoadAppDetails(){
@@ -344,10 +345,8 @@ public class ApplicationLogDialog extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new ApplicationLogDialog(app_no).setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new ApplicationLogDialog(app_no).setVisible(true);
         });
     }
 
