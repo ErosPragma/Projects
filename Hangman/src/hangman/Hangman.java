@@ -27,7 +27,7 @@ public class Hangman extends Application {
             
             @Override
             public void handle(ActionEvent event) {
-                System.out.println("Start");
+                //System.out.println("Start");
                 new Hangmanfile().show();
                 //this.hide();
             }
@@ -48,6 +48,7 @@ public class Hangman extends Application {
      */
     public static void main(String[] args) {
         launch(args);
+        //MySQLConnect mySQLConnect = new  MySQLConnect();
     }
     
 }

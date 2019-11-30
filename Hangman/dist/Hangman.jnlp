@@ -5,10 +5,11 @@
     <vendor>USER</vendor>
     <description>null</description>
     <offline-allowed/>
+  <shortcut><desktop/></shortcut>
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Hangman.jar" size="38098" download="eager" />
+    <jar href="Hangman.jar" size="416259" download="eager" />
     <jar href="lib\AbsoluteLayout.jar" size="2903" download="eager" />
     <jar href="lib\mysql-connector.jar" size="540852" download="eager" />
   </resources>
