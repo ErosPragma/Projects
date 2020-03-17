@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>How to stay safe from COVID19</title>
+    <link type="text/css" rel="stylesheet" href="./bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div aria-hidden="true">
+      <div class="banner hidden-xs">
+        <img src="./images/banner.jpg" alt="" class="bannerimage">
+        <div class="covid-text">How to stay safe from COVID-19</div>
+
+        <nav>
+        	<ul>
+            <li class="dropdown"><a href="#about" onclick="gotoOuterID('about')">About</a>
+        			<ul class="dropdown-menu">
+        				<li><a href="#about1" onclick="gotoID('about1')">What is Covid 19?</a></li>
+        				<li><a href="#about2" onclick="gotoID('about2')">How it spreads?</a></li>
+                <li><a href="#about3" onclick="gotoID('about3')">How Dangerous?</a></li>
+        			</ul>
+        		</li>
+
+        		<li class="dropdown"><a href="#prepare" onclick="gotoOuterID('prepare')">Preparation</a>
+        			<ul class="dropdown-menu">
+        				<li><a href="#prepare1" onclick="gotoID('prepare1')">Protect Yourself</a></li>
+        				<li><a href="#prepare2" onclick="gotoID('prepare2')">Protect Your Family</a></li>
+                <li><a href="#prepare3" onclick="gotoID('prepare3')">Anxiety & Stress</a></li>
+        			</ul>
+        		</li>
+
+            <li class="dropdown"><a href="#analysis" onclick="gotoOuterID('analysis')">Self Analysis</a>
+        			<ul class="dropdown-menu">
+        				<li><a href="#analysis1" onclick="gotoID('analysis1')">Symptoms</a></li>
+        				<li><a href="#analysis2" onclick="gotoID('analysis2')">Testing</a></li>
+                <li><a href="#analysis3" onclick="gotoID('analysis3')">False Claims</a></li>
+        			</ul>
+        		</li>
+
+            <li class="dropdown"><a href="#you" onclick="gotoOuterID('you')">What if YOU?</a>
+        			<ul class="dropdown-menu">
+        				<li><a href="#you1" onclick="gotoID('you1')">If you are in Risk</a></li>
+        				<li><a href="#you2" onclick="gotoID('you2')">If you are Sick</a></li>
+                <li><a href="#you3" onclick="gotoID('you3')">Self Care</a></li>
+        			</ul>
+        		</li>
+
+            <li><a href="#contact" onclick="gotoOuterID('contact')">Help-Line</a></li>
+        	</ul>
+        </nav>
+  </div>
+  </div>
+
+  <br>
+  <button class="accordion" id="about" onclick="elapse(this)" style="background-color: #ccc;">About</button>
+  <div class="panel" style="max-height: 100%;">
+    <button class="accordion inner-accordion"  id="about1" onclick="inner_elapse(this)">What is Covid 19?</button>
+    <div class="panel" style="max-height: 100%;">
+      <p>
+        <i>
+          The 2019–20 coronavirus pandemic is an ongoing pandemic of coronavirus disease 2019 (COVID-19)
+          caused by <u>severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)</u>
+          The outbreak was first identified in <u>Wuhan, Hubei, China</u>, in <u>December 2019</u> and recognised
+          as a pandemic by the World Health Organization (WHO) on 11 March 2020.
+        <br><br>
+          As of 16 March, more than 183,000 cases of the disease have been reported
+          in over 160 countries and territories, resulting in more than 7,100 deaths
+          and around 79,000 recoveries. Regions affected by major outbreaks include
+          mainland <u> China, Europe, Iran, South Korea, and the United States</u>.
+        </i>
+      </p>
+    </div>
+    <button class="accordion inner-accordion"  id="about2" onclick="inner_elapse(this)">How it spreads?</button>
+    <div class="panel">
+      <div class="container">
+        <br>
+        <h6>Person-to-person spread</h6>
+        <p>The virus is thought to spread mainly from person-to-person.</p>
+        <small>
+          <hr>
+        <div class="media">
+          <div class="media-left media-middle">
+            <img src="./images/contact.jpg" class="media-object" style="width:60px;height:60px">
+          </div>
+          <div class="media-body">
+          <p>Between people who are in close contact with one another (within about 6 feet).</p>
+          </div>
+        </div>
+        <hr>
+        <div class="media">
+          <div class="media-left media-middle">
+            <img src="./images/sneeze.png" class="media-object" style="width:60px;height:60px">
+          </div>
+          <div class="media-body">
+          <p>Through respiratory droplets produced when an infected person coughs or sneezes.<br> These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs.</p>
+          </div>
+        </div>
+      </small>
+      <hr>
+      <h6>Contact with contaminated surfaces or objects</h6>
+      <small>
+
+      <div class="media">
+        <div class="media-left media-middle">
+          <img src="./images/objects.png" class="media-object" style="width:60px;height:60px">
+        </div>
+        <div class="media-body">
+        <p>It may be possible that a person can get COVID-19 by touching a surface or object that has the virus on it and then touching their own mouth, nose, or possibly their eyes, but this is not thought to be the main way the virus spreads.</p>
+        </div>
+      </div>
+      </small>
+      <hr>
+      </div>
+    </div>
+    <button class="accordion inner-accordion" id="about3" onclick="inner_elapse(this)">How Dangerous is it?</button>
+    <div class="panel">
+      <div class="container">
+          <br>
+          <h6>Covid-19 is transmitted more readily between humans than Sars, though it is less virulent.
+         <br>The virus has caused severe respiratory disease in about 20 per cent of patients and killed more than 3 per cent of confirmed cases</h6>
+         <hr>
+         There is an increased risk of more severe outcomes
+          <div class="media">
+            <div class="media-body">
+              <ul type="circle">
+                <li>aged 65 and over</li>
+                <li>with compromised immune systems</li>
+                <li>with underlying medical conditions</li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+
+          As well, the risk for COVID-19 may be increased for certain settings such as:
+          <div class="media">
+            <div class="media-body">
+              <ul type="circle">
+                <li>cruise ships</li>
+                <li>heavily affected areas</li>
+                <li>Conferences and other large gatherings in enclosed spaces</li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+    </div>
+    </div>
+
+  <button class="accordion" id="prepare" onclick="elapse(this)" style="background-color: #ccc;">Preparation</button>
+  <div class="panel" id="inner-panel">
+    <button class="accordion inner-accordion"  id="prepare1" onclick="inner_elapse(this)">Protect Yourself</button>
+    <div class="panel">
+      <div class="container">
+        <br>
+        <h6>Clean your hands often</h6>
+        <small>
+        <div class="media">
+          <div class="media-left media-middle">
+            <img src="./images/clean-hands.png" class="media-object" style="width:60px;height:60px">
+          </div>
+          <div class="media-body">
+            <ul type="circle">
+              <li>Wash your hands often with soap and water or with hand sanitizer for at least 20 seconds especially after you have been in a public place, or after blowing your nose, coughing, or sneezing.</li>
+              <li>Avoid touching your eyes, nose, and mouth with unwashed hands.</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        </small>
+
+        <h6>Avoid close contact</h6>
+        <small>
+        <div class="media">
+          <div class="media-left media-middle">
+            <img src="./images/avoid-contact.png" class="media-object" style="width:60px;height:60px">
+          </div>
+          <div class="media-body">
+            <ul type="circle">
+              <li>Avoid close contact with people who are sick</li>
+              <li>Put distance between yourself and other people if COVID-19 is spreading in your community. This is especially important for people who are at higher risk of getting very sick.</li>
+            </ul>
+          </div>
+        </div>
+        </small>
+        <hr>
+      </div>
+    </div>
+    <button class="accordion inner-accordion"  id="prepare2" onclick="inner_elapse(this)">Protect Your Family</button>
+    <div class="panel">
+      <br>
+      <div class="container">
+      <h6>Stay home if you’re sick</h6>
+      <small>
+      <div class="media">
+        <div class="media-left media-middle">
+          <img src="./images/take-rest.png" class="media-object" style="width:60px;height:60px">
+        </div>
+        <div class="media-body">
+          <ul type="circle">
+            <br>
+            <li>Stay home if you are sick, except to get medical care.</li>
+          </ul>
+        </div>
+      </div>
+      </small>
+      <hr>
+      <h6>Cover coughs and sneezes</h6>
+      <small>
+      <div class="media">
+        <div class="media-left media-middle">
+          <img src="./images/cover-sneeze.png" class="media-object" style="width:60px;height:60px">
+        </div>
+        <div class="media-body">
+          <ul type="circle">
+            <li>Cover your mouth and nose with a tissue when you cough or sneeze or use the inside of your elbow</li>
+            <li>Throw used tissues in the trash.</li>
+            <li>Immediately wash your hands with soap and water for at least 20 seconds. If soap and water are not readily available, clean your hands with a hand sanitizer that contains at least 60% alcohol.</li>
+          </ul>
+        </div>
+      </div>
+      </small>
+      <hr>
+
+      <h6>Wear a facemask</h6>
+      <small>
+      <div class="media">
+        <div class="media-left media-middle">
+          <img src="./images/mask.png" class="media-object" style="width:60px;height:60px">
+        </div>
+        <div class="media-body">
+          <ul type="circle">
+            <li>You should wear a facemask when you are around other people</li>
+            <li>You should do your best to cover your coughs and sneezes, and people who are caring for you should wear a facemask if they enter your room</li>
+            <li>Facemasks may be in short supply and they should be saved for caregivers.</li>
+          </ul>
+        </div>
+      </div>
+      </small>
+      <hr>
+
+      <h6>Clean and disinfect</h6>
+      <small>
+      <div class="media">
+        <div class="media-left media-middle">
+          <img src="./images/disinfect.png" class="media-object" style="width:60px;height:60px">
+        </div>
+        <div class="media-body">
+          <ul type="circle">
+            <li>Clean AND disinfect frequently touched surfaces daily. This includes tables, doorknobs, light switches, countertops, handles, desks, phones, keyboards, toilets, faucets, and sinks.</li>
+            <li>If surfaces are dirty, clean them: Use detergent or soap and water prior to disinfection.</li>
+
+          </ul>
+        </div>
+      </div>
+      </small>
+      <hr>
+      </div>
+    </div>
+    <button class="accordion inner-accordion"  id="prepare3" onclick="inner_elapse(this)">Controlling Anxiety & Stress</button>
+    <div class="panel">
+      <div class="container">
+        <br>
+        <h6>People who may respond more strongly to the stress of a crisis include</h6>
+        <div class="media">
+          <div class="media-body">
+            <ul type="circle">
+              <li>Older people and people with chronic diseases who are at higher risk for COVID-19</li>
+              <li>Children and teens</li>
+              <li>People who are helping with the response to COVID-19, like doctors and other health care providers, or first responders</li>
+              <li>People who have mental health conditions including problems with substance use</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+
+        <h6>Stress during an infectious disease outbreak can include</h6>
+        <div class="media">
+          <div class="media-body">
+            <ul type="circle">
+                <li>Fear and worry about your own health and the health of your loved ones</li>
+                <li>Changes in sleep or eating patterns</li>
+                <li>Difficulty sleeping or concentrating</li>
+                <li>Worsening of chronic health problems</li>
+                <li>Increased use of alcohol, tobacco, or other drugs</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+
+        <h6>There are many things you can do to support childrens</h6>
+        <div class="media">
+          <div class="media-body">
+            <ul type="circle">
+                <li>Take time to talk with your child or teen about the COVID-19 outbreak. Answer questions and share facts &nbsp;about COVID-19 in a way that your child or teen can understand.</li>
+                <li>Reassure your child or teen that they are safe. Let them know it is ok if they feel upset. Share with them how you deal with your own stress so that they can learn how to cope from you.</li>
+                <li>Limit your family’s exposure to news coverage of the event, including social media. Children may misinterpret what they hear and can be frightened about something they do not understand.</li>
+                <li>Try to keep up with regular routines. If schools are closed, create a schedule for learning activities and relaxing or fun activities.</li>
+                <li>Be a role model. &nbsp;Take breaks, get plenty of sleep, exercise, and eat well. Connect with your friends and family members.</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+
+        <h6>There are things you can do to reduce secondary traumatic stress (STS) reactions:</h6>
+        <div class="media">
+          <div class="media-body">
+            <ul type="circle">
+              <li>Acknowledge that STS can impact anyone helping families after a traumatic event.</li>
+              <li>Learn the symptoms including physical (fatigue, illness) and mental (fear, withdrawal, guilt).</li>
+              <li>Allow time for you and your family to recover from responding to the pandemic.</li>
+              <li>Create a menu of personal self-care activities that you enjoy, such as spending time with friends and family, exercising, or reading a book.</li>
+              <li>Take a break from media coverage of COVID-19.</li>
+              <li>Ask for help if you feel overwhelmed or concerned that COVID-19 is affecting your ability to care for your family and patients as you did before the outbreak.</li>
+              </ul>
+          </div>
+        </div>
+        <hr>
+
+        <h6>There are things you can do for people who have been released from quarantine</h6>
+        <div class="media">
+          <div class="media-body">
+            <ul type="circle">
+              <li>Mixed emotions, including relief after quarantine</li>
+              <li>Fear and worry about your own health and the health of your loved ones</li>
+              <li>Stress from the experience of monitoring yourself or being monitored by others for signs and symptoms of COVID-19</li>
+              <li>Sadness, anger, or frustration because friends or loved ones have unfounded fears of contracting the disease from contact with you, even though you have been determined not to be contagious</li>
+              <li>Guilt about not being able to perform normal work or parenting duties during quarantine</li>
+              <li>Other emotional or mental health changes</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+
+    </div>
+    </div>
+  </div>
+
+  <button class="accordion" id="analysis" onclick="elapse(this)" style="background-color: #ccc;">Self Analysis</button>
+  <div class="panel">
+    <button class="accordion inner-accordion"  id="analysis1" onclick="inner_elapse(this)">Symptoms</button>
+    <div class="panel">
+      <div class="container">
+        <br>
+        <h6>Common Symptoms are</h6>
+        <br>
+        <img src="./images/symptoms.jpg" style="width:100%;height:100%">
+        <hr>
+      </div>
+    </div>
+    <button class="accordion inner-accordion"  id="analysis2" onclick="inner_elapse(this)">Testing</button>
+    <div class="panel">
+      <div class="container">
+        <br>
+        <h6>Emergency warning signs include</h6>
+        <div class="media">
+          <div class="media-body">
+            <ul type="circle">
+            <li>Difficulty breathing or shortness of breath</li>
+            <li>Persistent pain or pressure in the chest</li>
+            <li>New confusion or inability to arouse</li>
+            <li>Bluish lips or face</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <h6>Call a doctor</h6>
+        <div class="media">
+          <div class="media-left media-middle">
+            <img src="./images/call-doctor.jpg" class="media-object" style="width:60px;height:60px">
+          </div>
+          <div class="media-body">
+            <ul type="circle">
+              <li> If you think you have been exposed to COVID-19 and develop a fever and symptoms, call your healthcare provider for medical advice.</li>
+              <li> If you develop above mentioned <b>emergency warning signs</b> for COVID-19 get medical attention immediately.</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+    </div>
+    </div>
+    <button class="accordion inner-accordion"  id="analysis3" onclick="inner_elapse(this)">False Claims</button>
+    <div class="panel">
+      <div class="container">
+        <br>
+        <h6>The Following are the some of the falsely accused Claims: </h6>
+        <div class="media">
+          <div class="media-body">
+            <ul type="circle">
+            <li>Selling health products or claims to prevent, treat or cure COVID-19</li>
+            <li>Any disinfectant products with claims specific to COVID-19.<br>However, authorized disinfectant products can make a claim of broad spectrum of activity against viruses if they meet specific evidence standards</li>
+
+            </ul>
+          </div>
+        </div>
+        <hr>
+    </div>
+    </div>
+  </div>
+
+  <button class="accordion" id="you" onclick="elapse(this)" style="background-color: #ccc;">What if you are infected?</button>
+  <div class="panel">
+    <button class="accordion inner-accordion"  id="you1" onclick="inner_elapse(this)">If you think you are in risk</button>
+    <div class="panel">
+      <div class="container">
+        <br>
+        <h6>Who is at higher risk?</h6>
+        <div class="media">
+          <div class="media-body">
+            <ul type="circle">
+              <strong>
+                <li>If you encounter someone who later finds Covid-19 test positive</li>
+                <li>Older adults</li>
+                <li>People who have serious chronic medical conditions like:
+              </strong>
+              <ul>
+              <li>Heart disease</li>
+              <li>Diabetes</li>
+              <li>Lung disease</li>
+              </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <h6>Take actions to reduce your risk of getting sick</h6>
+        <div class="media">
+          <div class="media-left media-middle">
+            <img src="./images/risky.png" class="media-object" style="width:60px;height:60px">
+          </div>
+          <div class="media-body">
+            <ul type="circle">
+                <li><a>Stock up on supplies</a>.</li>
+                <li><strong>Take everyday precautions</strong>&nbsp;to keep space between yourself and others.</li>
+                <li>When you go out in public, keep away from others who are sick, limit close contact and wash your hands often.</li>
+                <li><strong>Avoid crowds</strong> as much as possible.</li>
+                <li><strong>Avoid cruise travel&nbsp;</strong>and non-essential air travel.</li>
+                <li><strong>During a COVID-19 outbreak in your community, stay home</strong>&nbsp;as much as possible to further reduce your risk of being exposed.</li>
+                </ul>
+          </div>
+        </div>
+        <hr>
+        <h6>Have supplies on hand</h6>
+        <div class="media">
+          <div class="media-left media-middle">
+            <img src="./images/supplies.png" class="media-object" style="width:60px;height:60px">
+          </div>
+          <div class="media-body">
+            <ul type="circle">
+              <li><strong>Contact your healthcare provider to ask about obtaining extra necessary medications</strong> to have on hand in case there is an outbreak of COVID-19 in your community and you need to stay home for a prolonged period of time.</li>
+              <li>If you cannot get extra medications, consider using mail-order for medications.</li>
+              <li><strong>Be sure you have over-the-counter medicines and medical supplies</strong> (tissues, etc.) to treat fever and other symptoms. Most people will be able to recover from COVID-19 at home.</li>
+              <li><strong>Have enough household items and groceries</strong> on hand so that you will be prepared to stay at home for a period of time.</li>
+              </ul>
+          </div>
+        </div>
+        <hr>
+        <h6>Take everyday precautions</h6>
+        <div class="media">
+          <div class="media-left media-middle">
+            <img src="./images/clean-hands.png" class="media-object" style="width:60px;height:60px">
+          </div>
+          <div class="media-body">
+            <ul type="circle">
+              <li>Clean your hands often</li>
+              <li><strong>Wash your hands often</strong> with soap and water for at least 20 seconds, especially after blowing your nose, coughing, or sneezing, or having been in a public place.</li>
+              <li>If soap and water are not available, use a hand sanitizer that contains at least 60% alcohol.</li>
+              <li><strong>To the extent possible, avoid touching high-touch surfaces in public places</strong> – elevator buttons, door handles, handrails, handshaking with people, etc. Use a tissue or your sleeve to cover your hand or finger if you must touch something.</li>
+              <li>Wash your hands after touching surfaces in public places.</li>
+              <li><strong>Avoid touching your face,</strong> nose, eyes, etc.</li>
+              <li><strong>Clean and disinfect</strong> your home to remove germs: practice routine cleaning of frequently touched surfaces (for example: tables, doorknobs, light switches, handles, desks, toilets, faucets, sinks &amp; cell phones)</li>
+              <li><strong>Avoid crowds,</strong> especially in poorly ventilated spaces. Your risk of exposure to respiratory viruses like COVID-19 may increase in crowded, closed-in settings with little air circulation if there are people in the crowd who are sick.</li>
+              <li><strong>Avoid all non-essential travel</strong> including plane trips, and especially avoid embarking on <u>cruise ships</u>.</li>
+              </ul>
+          </div>
+        </div>
+        <hr>
+        <h6>If COVID-19 is spreading in your community</h6>
+        <div class="media">
+          <div class="media-left media-middle">
+            <img src="./images/spread.png" class="media-object" style="width:60px;height:60px">
+          </div>
+          <div class="media-body">
+            Take extra measures to put distance between yourself and other people to further reduce your risk of being exposed to this new virus.
+            <ul type="circle">
+              <li><a id="stay-home"></a><strong>Stay home</strong> as much as possible.</li>
+              <li><strong>Consider ways of getting food brought to your house</strong> through family, social, or commercial networks</li>
+              </ul>
+          </div>
+        </div>
+        <hr>
+        <h6>Have a plan for if you get sick</h6>
+        <div class="media">
+          <div class="media-left media-middle">
+            <img src="./images/plan.png" class="media-object" style="width:60px;height:60px">
+          </div>
+          <div class="media-body">
+            <ul type="circle">
+              <li><strong>Consult with your health care provider </strong>for more information about <u>monitoring your health for symptoms suggestive of COVID-19</u>.</li>
+              <li><strong>Stay in touch with others by phone or email.</strong> You may need to ask for help from friends, family, neighbors, community health workers, etc. if you become sick.</li>
+              <li><strong>Determine who can care for you</strong> if your caregiver gets sick.</li>
+              </ul>
+          </div>
+        </div>
+        <hr>
+    </div>
+    </div>
+    <button class="accordion inner-accordion"  id="you2" onclick="inner_elapse(this)">If you think you are sick</button>
+    <div class="panel">
+      <div class="container">
+        <br>
+        <h6>What to do if you get sick</h6>
+        <div class="media">
+          <div class="media-body">
+            <ul type="circle">
+            <li><strong>Stay home and call your doctor.</strong></li>
+            <li>Call your healthcare provider and let them know about your symptoms. Tell them that you have or may have COVID-19. This will help them take care of you and keep other people from getting infected or exposed.</li>
+            <li>If you are not sick enough to be hospitalized, you can recover at home. Follow CDC instructions for <u>how to take care of yourself at home</u>.</li>
+            <li>Know when to get emergency help.</li>
+            <li>Get medical attention immediately if you have any of the emergency warning signs listed above.</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <h6>What to do to support older adults</h6>
+        <div class="media">
+          <div class="media-body">
+            <ul type="circle">
+              <li>Community preparedness planning for COVID-19 should include older adults and people with disabilities, and the organizations that support them in their communities, to ensure their needs are taken into consideration.
+              <ul>
+              <li>Many of these individuals live in the community, and many depend on services and supports provided in their homes or in the community to maintain their health and independence.</li>
+              </ul>
+              </li>
+              <li><strong>Long-term care facilities should be vigilant</strong> to prevent the introduction and spread of COVID-19. <u>Information for long-term care facilities can be found here.</u></li>
+              </ul>
+          </div>
+        </div>
+        <hr>
+        <h6>Family and caregiver support</h6>
+        <div class="media">
+          <div class="media-body">
+            <ul type="circle">
+              <li><strong>Know what medications your loved one is taking</strong> and see if you can help them have extra on hand.</li>
+              <li><strong>Monitor food and other medical supplies</strong> (oxygen, incontinence, dialysis, wound care) needed and create a back-up plan.</li>
+              <li><strong>Stock up on non-perishable food</strong>&nbsp;to have on hand in your home to minimize trips to stores.</li>
+              <li>If you care for a loved one living in a care facility, monitor the situation, ask about the health of the other residents frequently and know the protocol if there is an outbreak.</li>
+              </ul>
+          </div>
+        </div>
+        <hr>
+
+      </div>
+    </div>
+    <button class="accordion inner-accordion"  id="you3" onclick="inner_elapse(this)">How to care yourself if you are sick</button>
+    <div class="panel">
+      <div class="container">
+        <br>
+        <h6>10 things you can do to manage your health at home</h6>
+        <div class="media">
+          <div class="media-body">
+              <ol>
+                  <li>Stay home from work, school, and away from other public places. If you must go out, avoid using any kind of public transportation, ridesharing, or taxis.</li>
+                  <li>Monitor your symptoms carefully. If your symptoms get worse, call your healthcare provider immediately.</li>
+                  <li>Get rest and stay hydrated.</li>
+                  <li>If you have a medical appointment, call the healthcare provider ahead of time and tell them that you have or may have COVID-19.</li>
+                  <li>For medical emergencies, call 911 and notify the dispatch personnel that you have or may have COVID-19.</li>
+                  <li>Cover your cough and sneezes.</li>
+                  <li>Wash your hands often with soap and water for at least 20 seconds or clean your hands with an alcohol-based hand sanitizer that contains at least 60% alcohol.</li>
+                  <li>As much as possible, stay in a specific room and away from other people in your home. Also, you should use a separate bathroom, if available. If you need to be around other people in or outside of the home, wear a facemask.</li>
+                  <li>Avoid sharing personal items with other people in your household, like dishes, towels, and bedding</li>
+                  <li>Clean all surfaces that are touched often, like counters, tabletops, and doorknobs. Use household cleaning sprays or wipes according to the label instructions.</li>
+                  </ol>
+          </div>
+        </div>
+        <hr>
+
+      </div>
+    </div>
+  </div>
+
+  <button class="accordion" id="contact" onclick="elapse(this)" style="background-color: #ccc;">Help-Line & Contact</button>
+  <div class="panel">
+    <div class="container">
+      <br>
+      <p align="center">Central Helpline Number for corona-virus: -
+        <font color="red">
+        +91-11-23978046
+        </font>
+        <br>
+        For more details <a href="./images/helpline.pdf">This is a list of Helpline Numbers in INDIA</a>
+      </p>
+      <hr>
+      <h6>Coronavirus Helpline Numbers in Kerala</h6>
+      The residents of Kerala can reach out to the following round-the-clock helpline numbers for any queries or support related to COVID19
+      <div class="media">
+        <div class="media-body">
+          <ul type="circle">
+            <li>Central Helpline Number: +91-11-23978043</li>
+            <li>Kerala Helpline Number: 0471-2552056</li>
+            <li>Email: ncov2019@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+      <h6>Coronavirus Test Lab</h6>
+      The coronavirus lab test facility is available at these medical institutes in the state of Kerala
+      <div class="media">
+        <div class="media-body">
+          <ul type="circle">
+            <li>National Institute of Virology Field Unit, Kerala</li> <li>Govt. Medical College, Thriuvananthapuram, Kerala</li> <li>Govt. Medical College, Kozhikhode, Kerala</li> </ul>
+          </ul>
+        </div>
+      </div>
+      <hr>
+
+    </div>
+  </div>
+  </body>
+</html>
+<script>
+function elapse(x){
+  x.classList.toggle("active");
+  var panel = x.nextElementSibling;
+  if (panel.style.maxHeight)
+  {
+    //close all childs
+    panel.style.maxHeight = null;
+  }
+  else
+    panel.style.maxHeight = panel.scrollHeight + "px";
+}
+function inner_elapse(x){
+  x.classList.toggle("active");
+  var panel = x.nextElementSibling;
+  if (panel.style.maxHeight)
+    panel.style.maxHeight = null;
+  else
+  {
+    panel.style.maxHeight = panel.scrollHeight + "px";
+    var parent = panel.parentElement;
+    parent.style.maxHeight = parent.scrollHeight + panel.scrollHeight + "px";
+  }
+}
+function gotoOuterID(id){
+
+  var panel = document.getElementById(id);
+  panel.classList.toggle("active");
+  panel = panel.nextElementSibling;
+
+  if (!panel.style.maxHeight)
+    panel.style.maxHeight = panel.scrollHeight + "px";
+}
+function gotoID(id){
+
+  var panel = document.getElementById(id);
+  var parent = document.getElementById(id).parentElement.previousElementSibling;
+  panel.classList.toggle("active");
+  parent.classList.toggle("active");
+
+  parent = parent.nextElementSibling;
+  panel = panel.nextElementSibling;
+
+  if (!panel.style.maxHeight)
+  {
+    panel.style.maxHeight = panel.scrollHeight + "px";
+    parent.style.maxHeight = parent.scrollHeight + panel.scrollHeight + "px";
+  }
+}
+</script>
