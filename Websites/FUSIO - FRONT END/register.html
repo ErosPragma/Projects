@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+	<title>Fusio | Register</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<link type="text/css" rel="stylesheet" href="css/registerstyle.css">
+	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<header class="header">
+<div class="top">
+
+<div class="social">
+	<a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+	<a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+	<a href="#"><i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i></a>
+	<a href="#"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
+	<a href="#"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+</div>
+
+<div class="form">
+	<a href="login.html"> <img src="img/login.png"> </a>
+	<a href="register.html"> <img src="img/signup.png"> </a>
+</div>
+</div>
+<div class="head" width="10px">
+	<div class="logo">
+		<a class="square" href="#">
+		    <div class="burgerwrap">
+		        <span></span>
+		        <span id="dot"></span>
+		        <span id="dot"></span>
+		        <span id="half"></span>
+		        <span id="dot"></span>
+		        <span id="dot"></span>
+		        <span id="dot"></span>
+		    </div>
+		</a>
+	</div>
+	<div class="title" id="button-5">
+	<div id="translate"></div>
+	<a id="title" href="#">Fusio</a>
+</div>
+</div>
+
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="moredetails.html">More Details</a></li>
+		<li><a href="employee.html">Employee</a></li>
+		<li class="dropdown"><a href="#"  class="active">Account</a>
+			<ul class="dropdown-menu" >
+				<li><a href="register.html">Register</a></li>
+				<li><a href="login.html">Log in</a></li>
+			</ul>
+		</li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+</nav>
+</header>
+
+<div class="main">
+<section class="reg-main">
+<form id="msform">
+
+  <fieldset id="fs1">
+    <h2 class="fs-title">Create your account</h2>
+    <h3 class="fs-subtitle">Preliminary Step</h3>
+		<select id="type" name="type">
+			<option value="Customer">Customer</option>
+			<option value="Employee">Employee</option>
+		</select>
+		<input type="text" name="tag" placeholder="TAG name"/>
+    <input type="text" name="email" placeholder="Email" />
+    <input type="password" name="pass" placeholder="Password" />
+    <input type="password" name="cpass" placeholder="Confirm Password" />
+    <input type="button" name="next" class="next action-button" value="Next" onclick="nextfs('1')"/>
+  </fieldset>
+
+	<fieldset id="fs2">
+    <h2 class="fs-title">Employer Details</h2>
+    <h3 class="fs-subtitle">Details of Employee</h3>
+		<select class="type" name="etype">
+			<option value="eventmanager">Event Manager</option>
+			<option value="cook">Cook & Sheff</option>
+			<option value="caterer">Catering Services</option>
+			<option value="decoration">Decoration Expert</option>
+			<option value="entertainment">Entertainments</option>
+			<option value="costumemakeup">Costume & Makeup Experts</option>
+			<option value="venue">Venue & Auditorium</option>
+			<option value="accommodation">Accomodation Service Providers</option>
+			<option value="volunteers">Volunteers Services</option>
+			<option value="transport">Transport Services</option>
+		</select>
+    <input type="text" name="website" placeholder="website" />
+    <input type="text" name="slogan" placeholder="slogan" />
+    <textarea name="features" placeholder="Some of my unique features are" ></textarea>
+    <input type="button" name="previous" class="previous action-button" value="Previous" onclick="previousfs('2')" />
+    <input type="button" name="next" class="next action-button" value="Next" onclick="nextfs('2')"/>
+  </fieldset>
+
+	<fieldset  id="fs3">
+    <h2 class="fs-title">Personal Details</h2>
+    <h3 class="fs-subtitle">We will never sell it</h3>
+    <input type="text" name="fname" placeholder="First Name" />
+    <input type="text" name="lname" placeholder="Last Name" />
+    <input type="text" name="phone" placeholder="Phone" />
+    <textarea name="address" placeholder="Address"></textarea>
+		<input type="text" name="place" placeholder="Place" />
+		<input type="text" name="pin" placeholder="Pin" />
+    <input type="button" name="previous" class="previous action-button" value="Previous" onclick="previousfs('3')" />
+    <input type="submit" name="submit" class="submit action-button" value="Submit" onclick="submit()"/>
+  </fieldset>
+</form>
+</section>
+
+</div>
+<footer class="ftop">
+Copyright &copy; 2020 - All rights reserved
+<br>
+<a href="moredetails.html">About Us</a><a href="contact.html">Contact Us</a>Fully compatible for all major browsers.
+</footer>
+</body>
+</html>
+
+<script type="text/javascript">
+var type;
+function hideall() {
+			document.getElementById("fs1").style.display='none';
+			document.getElementById("fs2").style.display='none';
+			document.getElementById("fs3").style.display='none';
+}
+function nextfs(fs)
+{
+		hideall();
+		if (fs=="1")
+		{
+			var e = document.getElementById("type");
+			type = e.options[e.selectedIndex].value;
+			//alert(type);
+		}
+
+		if (type=="Customer")
+				document.getElementById('fs3').style.display='block';
+		else
+			  document.getElementById("fs"+(parseInt(fs)+1)).style.display='block';
+}
+function previousfs(fs)
+{
+	hideall();
+	//alert(fs+type);
+	if (fs=="3" && type=="Customer")
+			document.getElementById('fs1').style.display='block';
+	else
+			document.getElementById("fs"+(parseInt(fs)-1)).style.display='block';
+
+}
+</script>

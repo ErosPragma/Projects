@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+	<title>Fusio | Event Register</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header class="header">
+<div class="top">
+
+<div class="social">
+	<a href="#"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+	<a href="#"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+	<a href="#"><i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i></a>
+	<a href="#"><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
+	<a href="#"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+</div>
+
+
+<div class="head" width="10px">
+	<div class="logo">
+		<a class="square" href="#">
+		    <div class="burgerwrap">
+		        <span></span>
+		        <span id="dot"></span>
+		        <span id="dot"></span>
+		        <span id="half"></span>
+		        <span id="dot"></span>
+		        <span id="dot"></span>
+		        <span id="dot"></span>
+		    </div>
+		</a>
+	</div>
+	<div class="title" id="button-5">
+	<div id="translate"></div>
+	<a id="title" href="#">Fusio</a>
+</div>
+</div>
+</div>
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="moredetails.html">More Details</a></li>
+		<li><a href="employee.html">Employee</a></li>
+		<li class="dropdown"><a href="#"  class="active">Account</a>
+			<ul class="dropdown-menu" >
+				<li><a href="register.html">Register</a></li>
+				<li><a href="login.html">Log in</a></li>
+			</ul>
+		</li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+</nav>
+</header>
+
+<div class="main">
+<section>
+<form id="msform">
+
+  <fieldset>
+    <h2 class="fs-title">Event Details</h2>
+    <h3 class="fs-subtitle">Preliminary Step</h3>
+		<select class="type" name="type">
+			<option value="Customer">Customer</option>
+			<option value="Employee">Employee</option>
+		</select>
+		<input type="text" name="tag" placeholder="TAG name"/>
+    <input type="text" name="email" placeholder="Email" />
+    <input type="password" name="pass" placeholder="Password" />
+    <input type="password" name="cpass" placeholder="Confirm Password" />
+  </fieldset>
+	<hr>
+	<fieldset>
+    <h2 class="fs-title">Employer Details</h2>
+    <h3 class="fs-subtitle">Details of Employee</h3>
+		<select class="type" name="etype">
+			<option value="eventmanager">Event Manager</option>
+			<option value="cook">Cook & Sheff</option>
+			<option value="caterer">Catering Services</option>
+			<option value="decoration">Decoration Expert</option>
+			<option value="entertainment">Entertainments</option>
+			<option value="costumemakeup">Costume & Makeup Experts</option>
+			<option value="venue">Venue & Auditorium</option>
+			<option value="accommodation">Accomodation Service Providers</option>
+			<option value="volunteers">Volunteers Services</option>
+			<option value="transport">Transport Services</option>
+		</select>
+    <input type="text" name="website" placeholder="website" />
+    <input type="text" name="slogan" placeholder="slogan" />
+    <textarea name="features" placeholder="Some of my unique features are" ></textarea>
+  </fieldset>
+	<hr>
+	<fieldset>
+    <h2 class="fs-title">Personal Details</h2>
+    <h3 class="fs-subtitle">We will never sell it</h3>
+    <input type="text" name="fname" placeholder="First Name" />
+    <input type="text" name="lname" placeholder="Last Name" />
+    <input type="text" name="phone" placeholder="Phone" />
+    <textarea name="address" placeholder="Address"></textarea>
+		<input type="text" name="place" placeholder="Place" />
+		<input type="text" name="pin" placeholder="Pin" />
+  </fieldset>
+		<input type="submit" name="submit" class="submit action-button" value="Submit" onclick="submit()"/>
+</form>
+</section>
+
+</div>
+<footer class="ftop">
+Copyright &copy; 2020 - All rights reserved
+<br>
+<a href="moredetails.html">About Us</a><a href="contact.html">Contact Us</a>Fully compatible for all major browsers.
+</footer>
+</body>
+</html>
