@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Shopping List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="script.js"></script>
+    
+  </head>
+  <body>
+    <img src="./../../Anchor/white.jfif" class="card-img" height="100px" alt="">
+
+    <div class="panel">
+      <div class="container" ng-app="myShoppingList" ng-controller="myCtrl">
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">@</span>
+          </div>
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" ng-model="name">
+          <button type="submit" class="btn btn-primary" ng-click="admin()">Submit</button>
+        </div>
+
+        <p ng-hide="anyperson">Welcome {{name}} !!!</p>
+
+        <div class="row" >
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <u><h5 class="card-title">List of Items</h5></u>
+                <p class="card-text">Select the item to add to your cart</p>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Item</th>
+                        <th scope="col">Quantity</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr ng-repeat="x in products">
+                        <th scope="row">{{$index+1}}</th>
+                        <td>{{x.item}}</td>
+                        <td>{{x.q}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p ng-hide="person">
+                    <input ng-model="addI" placeholder="item">
+                    <input ng-model="addQ" placeholder="quantity">
+                    <button ng-click="addItem()" class="btn btn-primary">ADD ITEM</button><br><br>
+                    <input ng-model="remI" placeholder="item">
+                    <input ng-model="remQ" placeholder="quantity">
+                    <button ng-click="removeItem()" class="btn btn-primary">REMOVE</button>
+                    <br>{{errortext}}
+                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6" ng-hide="!person">
+            <div class="card">
+              <div class="card-body">
+                <u><h5 class="card-title">My Shopping Cart</h5></u>
+                <br>
+                <div>
+                  <input ng-model="addCartI" placeholder="item">
+                  <input ng-model="addCartQ" placeholder="quantity">
+                  <button  ng-click="addCart()" class="btn btn-primary">ADD ITEM</button><br><br>
+                  <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Item</th>
+                          <th scope="col">Quantity</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                    <tr ng-repeat="x in cart">
+                      <td>{{x.item}}</td>
+                      <td>{{x.q}}</td>
+                      <td><span ng-click="removeCart($index)">&times;</span></td>
+                    </tr>
+                  </table>
+                  <button ng-disabled="anyperson" class="btn btn-primary">SAVE ITEMS</button>
+                  <p>{{errortext}}</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

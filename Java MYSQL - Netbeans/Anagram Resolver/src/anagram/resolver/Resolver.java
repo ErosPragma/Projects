@@ -3,6 +3,7 @@ package anagram.resolver;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Resolver extends javax.swing.JFrame {
@@ -44,7 +45,7 @@ public class Resolver extends javax.swing.JFrame {
                     }
                 }
             }
-            catch(Exception e)
+            catch(ClassNotFoundException | SQLException e)
             {
                 System.out.println(e);
             }   

@@ -1,0 +1,115 @@
+.panel{
+  width: 80vw;
+  height: 80vh;
+  position: relative;
+  margin: auto;
+}
+.panel-heading{
+  display: flex;
+}
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #2c3e50;
+  background-image: none;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  left: 8px;
+  width: 3em;
+  height: 3em;
+  line-height: 2;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: .25em;
+
+}
+.back {
+  position: relative;
+  display: flex;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2;
+  border: none;
+  top: .25em;
+}
+
+.close{
+  text-align: right;
+  position: absolute;
+  right: 1em;
+}
+
+.close img{
+  width: 2em;
+  height: 2em;
+  line-height: 2;
+  border: none;
+  float: right;
+}
+
+
+.panel-body{
+  font-size: 1.5em;
+  line-height: 2em;
+  position: relative;
+  display: block;
+  overflow: scroll;
+  height:65vh;
+  width: 80vw;
+}
+
+.panel-body  .entry{
+  float: left;
+  text-align: left;
+  position: relative;
+}
+
+select {
+  flex: 1;
+  padding-left: 1em;
+  color: #fff;
+  cursor: pointer;
+  margin: auto;
+}
+select:selected{
+  font-size: 3em;
+}
+
+option{
+  font-size: 1.5em;
+}
+
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+
+
+.url {
+    display: block;
+    background: 0 0;
+    width: 50%;
+    overflow: scroll;
+    font-family: Poppins-Regular;
+    color: #555;
+    line-height: 1;
+    font-size: 1.8em;
+    padding: 0 8px;
+    outline: none;
+    border:none;
+    border-bottom:1px solid #757575;
+    pointer-events:none;
+}
