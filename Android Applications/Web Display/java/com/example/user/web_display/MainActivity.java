@@ -43,10 +43,16 @@ import java.net.URL;
 class FileManager
 {
     private static String TAG="TAG";
+    private static String dirname = "com.nr.web_display";
+
+    public static String getPath(String name)
+    {
+        return (Environment.getExternalStorageDirectory().getAbsolutePath()+"/Android/data/"+dirname+"/"+name);
+    }
 
     public static int createfile(String name)
     {
-        String path = Environment.getExternalStorageDirectory().getAbsolutePath()+"/Web Display";
+        String path = getPath(name);
         File dir;
         File file;
         while(true)
@@ -81,11 +87,11 @@ class FileManager
 
     public static String getList(String name)
     {
-        String path = Environment.getExternalStorageDirectory().getAbsolutePath()+"/Web Display/"+name;
+        String path = getPath(name);
         Log.i("TAG", "getList: "+path);
         String line="";
         String value="";
-       // list[0]="www.google.com";
+        // list[0]="www.google.com";
 
         if (createfile(name)!=0)
             return "";
@@ -108,7 +114,7 @@ class FileManager
 
     public static void deleteLine(String name,int pos)
     {
-        String path = Environment.getExternalStorageDirectory().getAbsolutePath()+"/Web Display/"+name;
+        String path = getPath(name);
         String values="",line;
         try
         {
@@ -149,7 +155,7 @@ class FileManager
 
     public static boolean lineExist(String name,String line)
     {
-        String path = Environment.getExternalStorageDirectory().getAbsolutePath()+"/Web Display/"+name;
+        String path = getPath(name);
         String value="";
 
         BufferedReader rd;
@@ -175,14 +181,14 @@ class FileManager
 
     public static void deleteFile(String name)
     {
-        String path = Environment.getExternalStorageDirectory().getAbsolutePath()+"/Web Display/"+name;
+        String path = getPath(name);
         new File(path).delete();
     }
 
     static void write(String name,String url)
     {
         String values="",line="";
-        String path = Environment.getExternalStorageDirectory().getAbsolutePath()+"/Web Display/"+name;
+        String path = getPath(name);
 
         createfile(name);
 
@@ -223,7 +229,6 @@ class FileManager
         }
     }
 }
-
 public class MainActivity extends AppCompatActivity {
 
 

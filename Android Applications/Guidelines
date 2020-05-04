@@ -1,0 +1,7 @@
+STEPS TO RUN
+  1. Create any Android Application
+  2. Open Explorer : ..\AndroidStudioProjects\<APP NAME>\app\src
+  3. Delete contents of main folder
+  4. Copy the content to main folder
+  5. Open ANDROID STUDIO to run
+  6. add necessary lib zips to ..\AndroidStudioProjects\<APP NAME>\app\libs

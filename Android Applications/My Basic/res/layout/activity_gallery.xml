@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_black"
+    android:fitsSystemWindows="true"
+    tools:context="com.nr.user.mybasicapp.Gallery">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@android:color/transparent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="My Gallery"
+        app:titleTextColor="@android:color/white" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp"
+        android:animationCache="false"
+        android:background="@android:color/transparent"
+        android:fastScrollEnabled="true"
+        android:gravity="center"
+        android:horizontalSpacing="0dp"
+        android:numColumns="auto_fit"
+        android:scrollingCache="false"
+        android:stretchMode="columnWidth" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/grid_opt"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:paddingLeft="75dp"
+        app:backgroundTint="@android:color/white"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/grid_on_img" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/upload"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:clickable="true"
+        android:paddingLeft="75dp"
+        app:backgroundTint="?android:attr/colorControlActivated"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_menu_upload" />
+
+</android.support.design.widget.CoordinatorLayout>
